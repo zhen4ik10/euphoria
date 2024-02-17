@@ -394,8 +394,8 @@ textarea {
   overflow: hidden;
   display: block;
   text-decoration-color: transparent;
-  -webkit-transition: all 0.3 ease-in-out;
-  transition: all 0.3 ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (any-hover: hover) {
   .item-product__link-title:hover {
