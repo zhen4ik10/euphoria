@@ -32,7 +32,8 @@ $liteColor: #f6f6f6;
 @import "_header.scss";
 // Підвал (Футер)
 @import "_footer.scss";
-
+// Тестова сторінка для практики
+// @import "_test.scss";
 
 body {
 	font-family: "Causten";
@@ -61,4 +62,8 @@ body {
 	margin: 0 auto;
 	padding-left: toRem(15);
 	padding-right: toRem(15);
+}
+
+.page {
+	// @include adaptiveValue("padding-top", 109, 66);
 }

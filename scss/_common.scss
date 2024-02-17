@@ -105,7 +105,7 @@
 	}
 	// .item-product__price
 	&__price {
-		align-self: center;
+		align-self: center; // ?
 		border-radius: toRem(8);
 		background-color: $liteColor;
 		padding: toRem(10) toRem(20);
