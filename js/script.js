@@ -107,3 +107,63 @@ let slideUp = (target, duration = 500) => {
 let slideToggle = (target, duration = 500) => {
     target.hidden ? slideDown(target, duration) : slideUp(target, duration)
 }
+
+// Слайдер
+const heroSlider = document.querySelector('.hero')
+if (heroSlider) {
+    // const swiper дописуємо тільки тоді коли є щось серйозне
+    new Swiper('.hero', {
+      // Optional parameters
+        loop: true,
+        autoHeight: true,
+        speed: 800,
+        parallax: true,
+        // If we need pagination
+        pagination: {
+            el: '.hero_pagination',
+            clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.hero__arrow--next',
+        prevEl: '.hero__arrow--prev',
+      },
+    });
+}
+const newSlider = document.querySelector('.new')
+if (newSlider) {
+    new Swiper('.new__slider', {
+      // Optional parameters
+        loop: true,
+        autoHeight: true,
+        speed: 800,
+        slidesPerView: 4,
+        spaceBetween: 38,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.new__arrow--right',
+            prevEl: '.new__arrow--left',
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 15
+            },
+            479.98: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            // when window width is >= 480px
+            649.98: {
+                slidesPerView: 3,
+                spaceBetween: 25
+            },
+            // when window width is >= 640px
+            991.98: {
+                slidesPerView: 4,
+                spaceBetween: 38
+            }
+        }
+    });
+}

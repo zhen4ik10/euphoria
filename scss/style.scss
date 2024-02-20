@@ -34,6 +34,8 @@ $liteColor: #f6f6f6;
 @import "_footer.scss";
 // Тестова сторінка для практики
 // @import "_test.scss";
+// Сторінки
+@import "_home.scss";
 
 body {
 	font-family: "Causten";
@@ -66,4 +68,16 @@ body {
 
 .page {
 	// @include adaptiveValue("padding-top", 109, 66);
+	// .page__hero
+	&__hero {
+		@include adaptiveValue("margin-bottom", 130, 40);
+	}
+	// .page__deals
+	&__deals {
+		@include adaptiveValue("margin-bottom", 100, 40);
+	}
+	// .page__new
+	&__new {
+		@include adaptiveValue("margin-bottom", 95, 40);
+	}
 }

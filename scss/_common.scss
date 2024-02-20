@@ -137,6 +137,7 @@
 }
 // Button
 .button {
+	font-family: "Causten";
 	background-color: $purplColor;
 	padding: toRem(16) toRem(20);
 	font-size: toRem(18);
@@ -187,13 +188,13 @@
 		background-color: #fff;
 		@media (any-hover: hover) {
 			&:hover {
-				color: $purplColor;
-				background-color: rgba(102, 32, 193, 0.03);
+				color: #fff;
+				background-color: $purplColor;
 			}
 		}
 		&:focus {
-			color: $purplColor;
-			background-color: rgba(102, 32, 193, 0.03);
+			color: #fff;
+			background-color: $purplColor;
 			box-shadow: none;
 		}
 		&:disabled {

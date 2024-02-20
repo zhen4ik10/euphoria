@@ -5,6 +5,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 50;
     // .header__container
     &__container {
         padding: toRem(10) toRem(0);
